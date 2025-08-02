@@ -29,28 +29,31 @@ This repository contains the configuration and documentation for my personal hom
   * **Server(s) / Compute:** Supermicro (32 x Intel Xeon CPU E5-2620 v4 @ 2.10GHz 2 Sockets / 192GB RAM)
   * **IoT Devices:** Google Home, Google Play, Phillips Hue Hub and Phillips Smart Lights, security cameras, smart thermostats, smart appliances.
   * **End User Devices:** Laptops, desktops, smartphones, gaming consoles.
-  * **WAN:**:  Fibre to the premise (FTTP) through Aussie Broadband - NBN Ultra-Fast 1000Mbps/50Mbps Unlimited
+  * **WAN:** Fibre to the premise (FTTP) through Aussie Broadband - NBN Ultra-Fast 1000Mbps/50Mbps Unlimited
 
   ### Software & Services
-  * [Software and tools]
+  * **Git:** GitHub
   
   ### Operating Systems:
-  * **Server:** Proxmox 8.4
+  * **Hypervisor:** Proxmox 8.4
+  * **Network Stack:** UniFi
+  * **Desktops/Laptops:** Mix of Windows 11 and Ubuntu
 
   ### Network Services:
-  * DHCP: [Service/Tool, e.g., pfSense DHCP Server]
-  * DNS: [Service/Tool, e.g., Pi-hole, Unbound]
-  * VPN: [Service/Tool, e.g., OpenVPN, WireGuard]
+  * **DHCP:** Unifi DHCP Server from the Ubiquiti Dream Machine Pro (UDM-Pro)
+  * **DNS:** Unifi DHCP Server from the Ubiquiti Dream Machine Pro (UDM-Pro)
 
-  ### Containerization/Orchestration:
-  * [Tool, e.g., Docker, Kubernetes (k3s/k8s)]
+  ### Containerisation/Orchestration:
+  * **Orchastrator:** K3s
 
   ### Configuration Management:
-  * [Tool, e.g., Ansible, Terraform]
+  * TBA
 
   ### Monitoring:
-  * [Tool, e.g., Prometheus, Grafana, Zabbix]
-  * [Add any other relevant software/services, e.g., Plex, Home Assistant, Nextcloud]
+  * TBA
+
+  ### Agent:
+  * I have built an agent to support network troubleshooting, the agent is powered by the comprehensive information within this repository (homelab-network-stack), designed to provide insights and assistance related to its configuration and operation. The underlying prompts and logic for this agent can be found in the ./agent directory of this repository.
 
   <hr>
 
@@ -58,14 +61,15 @@ This repository contains the configuration and documentation for my personal hom
   
   This repository is organized to logically separate different aspects of the network configuration:
 
-  * ./firewall/: Firewall rules, NAT configurations, and general router settings.
-  * ./networking/: VLAN definitions, IP addressing schemes, and switch configurations.
-  * ./dns/: DNS records, Pi-hole configurations, and custom host entries.
-  * ./vpn/: VPN server and client configurations.
-  * ./ansible/: Ansible playbooks for automating server and service deployments.
-  * ./terraform/: Terraform configurations for infrastructure as code.
-  * ./docs/: Additional documentation, notes, and troubleshooting guides.
-  * ./diagrams/: Network topology diagrams (logical and physical).
+  * **./firewall/:** Firewall rules, NAT configurations, and general router settings.
+  * **./networking/:** VLAN definitions, IP addressing schemes, and switch configurations.
+  * **./dns/:** DNS records, Pi-hole configurations, and custom host entries.
+  * **./vpn/:(( VPN server and client configurations.
+  * **./ansible/:** Ansible playbooks for automating server and service deployments.
+  * **./terraform/:** Terraform configurations for infrastructure as code.
+  * **./docs/:** Additional documentation, notes, and troubleshooting guides.
+  * **./diagrams/:** Network topology diagrams (logical and physical).
+  * **./agent/:** Prompts for agentic home network specialist.
 
   <hr>
 
