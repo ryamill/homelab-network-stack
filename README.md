@@ -4,9 +4,6 @@ This repository contains the configuration and documentation for my personal hom
   ## Table of Contents
   * [Overview](#Overview)
   * [Components](#Components)
-  * [Hardware](#Hardware)
-  * [Components](#Components)
-  * [Software & Services](#Software--Services)
   * [Configuration Structure](#Configuration-Structure)
   * [Network Diagrams](#Network-Diagrams)
   * [Contributing](#Contributing)
@@ -59,12 +56,12 @@ This repository contains the configuration and documentation for my personal hom
 
   ## Configuration Structure
   
-  This repository is organized to logically separate different aspects of the network configuration:
+  This repository is organised to logically separate different aspects of the network configuration:
 
   * **./firewall/:** Firewall rules, NAT configurations, and general router settings.
   * **./networking/:** VLAN definitions, IP addressing schemes, and switch configurations.
   * **./dns/:** DNS records, Pi-hole configurations, and custom host entries.
-  * **./vpn/:(( VPN server and client configurations.
+  * **./vpn/:** VPN server and client configurations.
   * **./ansible/:** Ansible playbooks for automating server and service deployments.
   * **./terraform/:** Terraform configurations for infrastructure as code.
   * **./docs/:** Additional documentation, notes, and troubleshooting guides.
