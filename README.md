@@ -71,6 +71,8 @@ This repository contains the configuration and documentation for my personal hom
   <hr>
 
   ## Network Diagrams
+
+  ![alt text](https://github.com/ryamill/homelab-network-stack/blob/main/diagrams/ubiquity-home-network-diagram.pdf "High Level Network Diagram")
   
   Detailed network diagrams will be included in the ./diagrams/ directory. These will illustrate:
 
